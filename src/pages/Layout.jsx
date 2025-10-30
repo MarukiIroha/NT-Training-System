@@ -2,7 +2,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { createPageUrl } from "@/utils";
-import { BookOpen, GraduationCap, BarChart3, FileText, LogOut, Shield } from "lucide-react";
+import { BookOpen, GraduationCap, BarChart3, FileText, LogOut, Shield, MessageSquare } from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
@@ -60,6 +60,12 @@ export default function Layout({ children, currentPageName }) {
       title: "My Reports",
       url: createPageUrl("Reports"),
       icon: FileText,
+      show: true,
+    },
+    {
+      title: "Forum",
+      url: createPageUrl("Forum"),
+      icon: MessageSquare,
       show: true,
     },
     {

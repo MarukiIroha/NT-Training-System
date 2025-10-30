@@ -7,6 +7,10 @@ export const TestSession = base44.entities.TestSession;
 
 export const TestAnswer = base44.entities.TestAnswer;
 
+export const ForumPost = base44.entities.ForumPost;
+
+export const ForumComment = base44.entities.ForumComment;
+
 
 
 // auth sdk:

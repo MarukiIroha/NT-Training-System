@@ -10,6 +10,8 @@ import ExamMode from "./ExamMode";
 
 import Reports from "./Reports";
 
+import Forum from "./Forum";
+
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 
 const PAGES = {
@@ -23,6 +25,8 @@ const PAGES = {
     ExamMode: ExamMode,
     
     Reports: Reports,
+    
+    Forum: Forum,
     
 }
 
@@ -60,6 +64,8 @@ function PagesContent() {
                 <Route path="/ExamMode" element={<ExamMode />} />
                 
                 <Route path="/Reports" element={<Reports />} />
+                
+                <Route path="/Forum" element={<Forum />} />
                 
             </Routes>
         </Layout>
